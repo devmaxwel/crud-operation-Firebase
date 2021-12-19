@@ -41,12 +41,31 @@ const View = () => {
           <span>{user.name}</span>
           <br />
           <br />
-          <strong>Email: </strong>
-          <span>{user.email}</span>
+          <strong>Serial Number: </strong>
+          <span>{user.serial}</span>
+          <br />
+          <br />
+          <strong>Poblem_Of_Device: </strong>
+          <span>{user.Problem_of_device}</span><br/>
+
+          <strong>Amount_Charged: </strong>
+          <span>{user.Amount_Charged}</span>
+          <br />
+          <br />
+          <strong>Amount_Paid: </strong>
+          <span>{user.Amount_Paid}</span>
+          <br />
+          <br />
+          <strong>Served By: </strong>
+          <span>{user.served_by}</span>
           <br />
           <br />
           <strong>Contact: </strong>
           <span>{user.contact}</span>
+          <br />
+          <br />
+          <strong>Status: </strong>
+          <span>{user.status}</span>
           <br />
           <br />
           <Link to="/">

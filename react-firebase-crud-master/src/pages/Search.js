@@ -16,7 +16,7 @@ const Search = () => {
 
   useEffect(() => {
     searchData();
-  }, [search]);
+  },);
 
   const searchData = () => {
     fireDb
@@ -46,7 +46,11 @@ const Search = () => {
               <tr>
                 <th style={{ textAlign: "center" }}>No.</th>
                 <th style={{ textAlign: "center" }}>Name</th>
-                <th style={{ textAlign: "center" }}>Email</th>
+                <th style={{ textAlign: "center" }}>Serial Number</th>
+                <th style={{ textAlign: "center" }}>Problem Of Device</th>
+                <th style={{ textAlign: "center" }}>Amount Charged</th>
+                <th style={{ textAlign: "center" }}>Amount Paid</th>
+                <th style={{ textAlign: "center" }}>Served By</th>
                 <th style={{ textAlign: "center" }}>Contact</th>
                 <th style={{ textAlign: "center" }}>Status</th>
               </tr>
@@ -57,7 +61,11 @@ const Search = () => {
                   <tr key={id}>
                     <th scope="row">{index + 1}</th>
                     <td>{data[id].name}</td>
-                    <td>{data[id].email}</td>
+                    <td>{data[id].serial}</td>
+                    <td>{data[id].Problem_of_device}</td>
+                    <td>{data[id].Amount_Charged}</td>
+                    <td>{data[id].Amount_Paid}</td>
+                    <td>{data[id].served_by}</td>
                     <td>{data[id].contact}</td>
                     <td>{data[id].status}</td>
                   </tr>

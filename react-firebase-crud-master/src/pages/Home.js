@@ -133,7 +133,11 @@ const Home = () => {
                 <tr key={index}>
                   <th scope="row">{index + 1}</th>
                   <td>{item.name}</td>
-                  <td>{item.email}</td>
+                  <td>{item.serial}</td>
+                  <td>{item.Proble_of_device}</td>
+                  <td>{item.Amount_Charged}</td>
+                  <td>{item.Amount_Paid}</td>
+                  <td>{item.served_by}</td>
                   <td>{item.contact}</td>
                   <td>{item.status}</td>
                 </tr>
@@ -146,11 +150,11 @@ const Home = () => {
       <select className="dropdown" name="colValue" onChange={handleChange}>
         <option>Please Select</option>
         <option value="name">Name</option>
-        <option value="email">Seril Number</option>
-        <option value="contact">Problemo of The Device</option>
-        <option value="status">Amount Charged</option>
-        <option value="name">Amount Paid</option>
-        <option value="email">Served_By</option>
+        <option value="serial">Seril Number</option>
+        <option value="Problem_of_device">Problemo of The Device</option>
+        <option value="Amount_Charged">Amount Charged</option>
+        <option value="Amount_Paid">Amount Paid</option>
+        <option value="served-by">Served_By</option>
         <option value="contact">Contact</option>
         <option value="status">Status</option>
       </select>

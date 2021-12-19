@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
 
-    if (location.pathname === "/") {
+    if (location.pathname === "/home") {
       setActiveTab("Home");
     } else if (location.pathname === "/add") {
       setActiveTab("Book-Customer");
